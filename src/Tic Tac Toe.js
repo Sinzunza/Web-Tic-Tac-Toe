@@ -1,6 +1,3 @@
- // Single line comment
-/* Multiple line comment */
-
 var rightName = 0;
 var playerXName = prompt("What is Player 1's name?");
 
