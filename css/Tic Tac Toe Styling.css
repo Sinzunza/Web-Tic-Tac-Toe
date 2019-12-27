@@ -1,0 +1,49 @@
+body {
+	background-color: #2b2b2b;
+    color: white;
+	font-family: Comic Sans MS, courier;
+	text-align: center;
+	margin: 0;
+}
+
+table {
+	margin: auto;
+	width: 350px;
+    height: 350px;
+}
+
+table, td {
+	border: 2px solid white;
+	border-collapse: collapse;
+    table-layout: fixed;
+}
+
+button {
+    width: 95%;
+    height: 95%;
+    background-color: #2b2b2b;
+    border: none;
+    outline: none;
+}
+
+#logo {
+	position: absolute;
+	margin-left: 93%;
+}
+
+#xColor {
+	color: blue;
+}
+
+#oColor {
+	color: red;
+}
+
+#turnColor {
+	color: white;
+}
+
+#bottomCopyright {
+	margin-top: 10%;
+	color: white;
+}
