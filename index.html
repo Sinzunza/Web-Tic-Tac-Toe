@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-
-    <title> Sergio - Tic Tac Toe </title>
-
-    <link href="css/Tic Tac Toe Styling.css" rel="stylesheet" type="text/css">
-
-    <script  src="src/Tic Tac Toe.js" type="text/javascript" async> </script>
-
-</head>
-
-<body>
-
-     <div id="logo"> <img src="images/InzuProdpn2.png" alt="InzuFate" width="100%" height="70%"/> </div>
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/script.js" type="text/javascript" async></script>
+  </head>
+  <body>
+     
     <h1> Tic Tac Toe </h1>
-    <span id="xColor"><p> Player X: <span id="xName"></span></span></br><span id="oColor">Player O: <span id="oName"></span></span>
-    </br> <span id="turnColor">Current Turn: <span id="turnPlayer"></span></span> </p>
+    <h2 class="h2GameInfo">Scores: X =  <span id="spanX_Score">0</span>, &nbsp; O = <span id="spanO_Score">0</span></h2>
+    <h2 class="h2GameInfo" id="h2Turn">Turn: <span id="spanDisplayPlayer">X</span></h2></body>
 
-    <table>
-    	<tr>
-    		<td id="0"> <button onclick="currentSelection(0)"></button> </td>
-    		<td id="1"> <button onclick="currentSelection(1)"></button> </td>
-    		<td id="2"> <button onclick="currentSelection(2)"></button> </td>
-    	</tr>
-    	<tr>
-    		<td id="3"> <button onclick="currentSelection(3)"></button> </td>
-    		<td id="4"> <button onclick="currentSelection(4)"></button> </td>
-    		<td id="5"> <button onclick="currentSelection(5)"></button> </td>
-    	</tr>
-    	<tr>
-    		<td id="6"> <button onclick="currentSelection(6)"></button> </td>
-    		<td id="7"> <button onclick="currentSelection(7)"></button> </td>
-    		<td id="8"> <button onclick="currentSelection(8)"></button> </td>
-    	</tr>
-    </table>
-
-    <div id="bottomCopyright">
-
-        Copyright (c) 2017 Copyright Holder All Rights Reserved.
-        <br>
-        Website by Sergio Inzunza
-
+    <div id="divGameMode">
+      <button class="btnsGameMode" id="btnTwoPlayers" onclick="changeMode('TwoPlayer')"> Two Players </button>
+      <button class="btnsGameMode" id="btnCPU" onclick="changeMode('CPU')"> CPU </button>
     </div>
 
-</body>
+    <div id="divSetGame">
+      <button class="btnsSetGame" id="btnNewGame" onclick="setTimeout(newGame, 500)">New Game</button>
+      <button class="btnsSetGame" id="btnReset" onclick="setTimeout(resetGame, 500)" >Reset</button>
+    </div>
+
+    <div class="divBoard">
+      <div class="divBoardRows">
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxOne" onclick="currentSelection(1)"></button> </div>
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxTwo" onclick="currentSelection(2)"></button> </div>
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxThree" onclick="currentSelection(3)"></button>  </div>
+      </div>
+      <div class="divBoardRows">
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxFour" onclick="currentSelection(4)"></button>  </div>
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxFive" onclick="currentSelection(5)"></button> </div>
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxSix" onclick="currentSelection(6)"></button>  </div>
+      </div>
+      <div class="divBoardRows">
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxSeven" onclick="currentSelection(7)"></button> </div>
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxEight" onclick="currentSelection(8)"></button> </div>
+        <div class="divBoxes"> <button class="btnsChoice" id="btnBoxNine" onclick="currentSelection(9)"></button> </div>
+      </div>
+    </div>
+  </body>
+
 
 </html>
