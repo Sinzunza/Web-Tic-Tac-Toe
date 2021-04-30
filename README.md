@@ -1,6 +1,6 @@
 # Web Tic Tac Toe
 
-Interactive tic tac toe web game with the use JavaScript, Html and CSS.
+Interactive multiplayer and solo tic tac toe web game with the use of JavaScript, Html and CSS.
 
 Sergio Inzunza
 
